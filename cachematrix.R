@@ -37,5 +37,6 @@ cacheSolve <- function(x, ...) {
 }
 
 c <- makeCacheMatrix(matrix(c(1, 2, 2, 2), nrow=2, ncol=2) )
-cacheSolve(c)
-cacheSolve(c)
+cacheSolve(c) ## Will return "value not yet cached"
+cacheSolve(c) ## Will return "getting cached data"
+solve(matrix(c(1, 2, 2, 2), nrow=2, ncol=2) ) ## just to make sure..
